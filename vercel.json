@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/tarjeta-contacto",
+      "destination": "/tarjeta-contacto.html"
+    }
+  ]
+}
