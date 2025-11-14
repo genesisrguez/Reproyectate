@@ -3,6 +3,10 @@
     {
       "source": "/tarjeta-contacto",
       "destination": "/tarjeta-contacto.html"
+    },
+    {
+      "source": "/index",
+      "destination": "/index.html"
     }
   ]
 }
