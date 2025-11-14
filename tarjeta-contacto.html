@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="./images/logo_reproyectate.png">
+
+  <title>Tarjeta de Contacto - ReProyéctate</title>
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Display+Playfair:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Base -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+  /* GENERAL */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fc;
+  }
+
+  /* ================= NAVBAR ================= */
+  nav.site-nav {
+    margin: 0 !important; /* Quita el espacio arriba */
+    padding: 0 !important;
+  }
+
+  .sticky-nav {
+    background-color: #002658F2 !important;
+    padding: 12px 0 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  /* Logotipo con margen */
+  .logo img {
+    height: 85px;
+    padding: 8px 20px; /* agrega espacio lateral */
+  }
+
+  /* ================= TARJETAS ================= */
+  .untree_co-section {
+    flex: 1; /* permite que el contenido empuje al footer hacia abajo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centra verticalmente */
+    padding: 40px 0;
+  }
+
+  .titulo-seccion {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .subtitulo-seccion {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #555;
+  }
+
+  .card-contacto {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 8px 22px rgba(0,0,0,0.15);
+    background: #fff;
+    transition: transform .45s ease, box-shadow .45s ease;
+  }
+
+  /* Tarjeta más grande */
+  .card-contacto img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ZOOM más fuerte */
+  .card-contacto:hover {
+    transform: scale(1.20);
+    box-shadow: 0px 25px 40px rgba(0,0,0,0.35);
+    z-index: 20;
+  }
+
+  /* ================= FOOTER ================= */
+  .site-footer {
+    margin-top: auto;
+    background-color: #136ad5 !important;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .site-footer p {
+    margin: 0;
+  }
+</style>
+
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <nav class="site-nav mb-5">
+    <div class="sticky-nav js-sticky-header">
+      <div class="container position-relative">
+        <div class="site-navigation text-center d-flex justify-content-center align-items-center">
+          <a href="index.html" class="logo menu-absolute">
+            <img src="./images/ReProyéctate_logotipo_blanco.png" alt="" height="100px">
+          </a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#sobrenosotros">Sobre nosotros</a></li>
+            <li><a href="index.html#programas">Programas</a></li>
+            <li><a href="index.html#testimonios">Testimonios</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= CONTENIDO ================= -->
+  <div class="untree_co-section">
+    <div class="container">
+
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center" data-aos="fade-up">
+          <h2 class="line-bottom mb-4">¡Conectemos!</h2>
+          <p class="lead">Me encantará mantenernos en contacto y construir algo juntos.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+
+        <!-- Tarjeta 1 -->
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card-contacto">
+            <img src="images/tarjeta anverso.png" alt="Tarjeta Frente">
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card-contacto">
+            <img src="images/tarjeta reverso.png" alt="Tarjeta Dorso">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
